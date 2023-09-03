@@ -1,4 +1,4 @@
-package ch2;
+package ch2.attempt;
 
 import java.util.ArrayList;
 import java.util.HashMap;

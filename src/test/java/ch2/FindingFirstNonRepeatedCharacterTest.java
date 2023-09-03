@@ -1,5 +1,6 @@
 package ch2;
 
+import ch2.attempt.FindingFirstNonRepeatedCharacter;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
