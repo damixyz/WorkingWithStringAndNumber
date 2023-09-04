@@ -19,6 +19,7 @@ Write a program that returns the first non-repeated character from a given strin
 
 #### Initial Idea Outcome:
 
-Solution failed because the order of input in the HashMap is not maintained.
+* The Solution failed because the order of input in the HashMap is not maintained.
+* I should I have used a `LinkedHashMap`, with a `LinkedHashMap` the test passes.
 
 #### Suggested Solution:

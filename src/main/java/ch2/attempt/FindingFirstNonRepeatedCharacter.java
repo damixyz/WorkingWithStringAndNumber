@@ -1,13 +1,10 @@
 package ch2.attempt;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class FindingFirstNonRepeatedCharacter {
     static Character nonRepeatedChar(String value) {
-        Map<Character, Integer> map = new HashMap<>();
+        Map<Character, Integer> map = new LinkedHashMap<>();
 
         char[] chars = value.toCharArray();
         for (char ch :
