@@ -2,6 +2,7 @@ package ch1.solution;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class CountingDuplicateCharacters {
@@ -41,6 +42,6 @@ public class CountingDuplicateCharacters {
     public Map<String, Long> countDuplicateCharactersStreamUniCode(String str) {
         return str.codePoints()
                 .mapToObj(c -> String.valueOf(Character.toChars(c)))
-                .collect(Collectors.groupingBy(c -> c, Collectors.counting()));
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
     }
 }
