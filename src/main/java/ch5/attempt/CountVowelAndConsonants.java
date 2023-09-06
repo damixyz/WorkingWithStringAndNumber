@@ -10,7 +10,7 @@ public class CountVowelAndConsonants {
             new HashSet<>(Arrays.asList('a', 'e', 'i', 'o', 'u'));
 
 
-    public static AbstractMap.SimpleEntry<Integer, Integer> countVowelsAndConsonants(String str) {
+    public static Map.Entry<Integer, Integer> countVowelsAndConsonants(String str) {
 
         str = str.toLowerCase();
         int vowels = 0;
@@ -27,7 +27,7 @@ public class CountVowelAndConsonants {
         return new AbstractMap.SimpleEntry<>(vowels, consonants);
     }
 
-    public static AbstractMap.SimpleEntry<Long, Long> countVowelsAndConsonantsFunctionalStyle(String str) {
+    public static Map.Entry<Long, Long> countVowelsAndConsonantsFunctionalStyle(String str) {
         str = str.toLowerCase();
 
         long vowels = str.chars()
@@ -44,7 +44,7 @@ public class CountVowelAndConsonants {
     }
 
 
-    public static AbstractMap.SimpleEntry<Long, Long> countVowelsAndConsonantsFunctionalStylePartitioningBy(String str) {
+    public static Map.Entry<Long, Long> countVowelsAndConsonantsFunctionalStylePartitioningBy(String str) {
         str = str.toLowerCase();
 
         Map<Boolean, Long> result = str.chars()
